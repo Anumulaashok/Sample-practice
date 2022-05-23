@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+       *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body
+        {
+            background-image: url(https://images.unsplash.com/photo-1607438051180-3ad72c315017?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8am9rZXJ8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=600); 
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        #navbar
+        {
+        
+            height: 50px;
+            width: 100%;
+            background-image: linear-gradient(to right , red ,40%,black);
+            color: white;
+            display: flex;
+            /* justify-content: space-around; */
+            /* align-items: left; */
+            font-weight: bold;
+            font-size: 22px;
+          margin-bottom: 20px;
+        }
+
+      #show_products
+      {
+        border: none;
+        height: 100%;
+        background-color: rgb(214, 14, 14);
+        color: white;
+        font-size: 22px;
+        margin-left: 20px;
+      }
+      #products>input{
+        text-align: center;
+            align-items: center;
+            margin-top: 40px;
+            font-size: 20px;
+            height: 45px;
+            border: 1px solid;
+            width: 100%;
+            border-radius:10px ;
+      }
+      #study>input:last-child(3){
+            background-color: rgb(71, 189, 213);
+            border-radius:50px ;
+            border: 1mm solid red;
+        }
+        #products
+        {
+          align-items: center;
+            width: 400px;
+            height: auto;
+            padding: 100px;
+            margin-top: 20px;
+            margin: auto;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            text-align: center;
+            justify-content: center;
+           background-image: url(https://images.unsplash.com/photo-1653053151870-0462aef3440e?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&auto=format&fit=crop&w=600);
+        
+        }
+        div>h2{
+          text-align: center;
+          color: white;
+          font-size: 26px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div id="navbar">
+      <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+      <button id="show_products" onclick="showf()">Show Products</button>
+
+    </div>
+    <div>
+      <h2>Add Products</h2>
+      <!--Create a form here to accept product data from user, give form HTML id as "products"-->
+      <form id="products" onsubmit="showproducts()">
+        <input type="text" id="type" placeholder="type">
+        <input type="text" id="desc" placeholder="Description">
+        <input type="number" id="price" placeholder="Price">
+        <input type="url" id="image" placeholder="Image Url">
+       <input type="submit" value="Add Product" id="add_product"></input>
+      </form>
+      <!--Create four inputs to accept Type, Description, price, & image-->
+      <!--give the inputs following respective id's, "type", "desc", "price","image"-->
+      <!--create a "Add Product" button to submit form, give it html id as "add_product"-->
+      </form>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>

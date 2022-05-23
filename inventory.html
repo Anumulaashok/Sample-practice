@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+      *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #navbar
+        {
+        
+            height: 50px;
+            width: 100%;
+            background-image: linear-gradient(to right , red ,40%,black);
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-weight: bold;
+            font-size: 22px;
+          margin-bottom: 20px;
+        }
+       
+        body
+        {
+            background-image: url(https://images.unsplash.com/photo-1607438051180-3ad72c315017?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8am9rZXJ8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=600); 
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+     #add_more_product
+     {
+       /* height: 50px; */
+       font-size: 26px;
+       border: none;
+       color: white;
+       background-color: rgb(93, 7, 7);
+      
+
+     }
+  #all_products{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+   grid-auto-rows: auto;
+   text-align: center;
+   font-size: 22px;
+  }
+  #all_products>div{
+  /* padding: 10px; */
+  padding-bottom: 20px;
+  color: white;
+  background-image: url(https://media.istockphoto.com/photos/dramatic-blue-shades-painted-canvas-and-muslin-cloth-studio-fitting-picture-id1333345659?b=1&k=20&m=1333345659&s=170667a&w=0&h=KPoN2pcKeZrNK8USC8tT1Ks0U2scRcRqs2QbB9Aa15k=);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  #all_products>div>img{
+    width: 100%;
+ 
+  }
+  #all_products>div>button{
+    /* background-color: none; */
+  background-image: url(https://media.istockphoto.com/photos/dramatic-blue-shades-painted-canvas-and-muslin-cloth-studio-fitting-picture-id1333345659?b=1&k=20&m=1333345659&s=170667a&w=0&h=KPoN2pcKeZrNK8USC8tT1Ks0U2scRcRqs2QbB9Aa15k=);
+color: white;
+    border: none;
+   font-size: 22px;
+
+
+  }
+
+
+  </style>
+
+  <body>
+    <div id="navbar">
+      <button id="add_more_product" onclick="addmore()">Add More Products</button>
+      <!--Create Add More Product button here, give id as "add_more_product". avoid making spelling mistakes in HTML id's-->
+    </div>
+    <div id="all_products">
+      <!--append all products data here in grid format-->
+      <!-- The Remove Product button will have id as "remove_product" -->
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/inventory.js"></script>
